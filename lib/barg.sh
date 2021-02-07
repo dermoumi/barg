@@ -5,8 +5,8 @@ bgen:import butl/arrays
 bgen:import butl/ansi
 bgen:import butl/log
 
-bgen:import parse
-bgen:import usage
+bgen:import barg/_parse.sh
+bgen:import barg/_usage.sh
 
 # shellcheck disable=SC2034
 : "${__barg_style_title:="${BUTL_ANSI_RESET}${BUTL_ANSI_YELLOW}"}"

@@ -1,0 +1,13 @@
+{
+    "name": "barg",
+    "version": "0.0.1",
+    "description": "argument parsing library for bash",
+    "files": [
+      "lib/barg.sh",
+      "lib/barg/_parse.sh",
+      "lib/barg/_usage.sh"
+    ],
+    "dependencies": {
+      "dermoumi/butl": "master"
+    }
+}
