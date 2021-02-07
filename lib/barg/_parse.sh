@@ -252,7 +252,7 @@ barg.parse() {
 
         if [[ "${__barg_catchall_arg:-}" ]]; then
             local var_arg_allow_dash="__barg_arg_${__barg_catchall_arg}_allow_dash"
-            local arg_allow_dash=${!var_arg_allow_dash}
+            local arg_allow_dash=${!var_arg_allow_dash:-}
 
             if [[ "$arg" == -?* ]]; then
                 if ((process_args_only || arg_allow_dash)); then
